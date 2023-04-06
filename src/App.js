@@ -10,18 +10,21 @@ function App() {
       description: 'Leo et Paige filent le parfait bonheur. Un jour de neige, au retour du cinéma, ils sont victimes d un accident d la route',
       posterURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelt51zlx5jFfP9TzWZysnUIwxneUJHAclcwp75RnGN5lGvQkC',
       rating: 5,
+      trailerURL: '---'
     },
     {
       title: 'El Niño',
       description: 'Le détroit de Gibraltar, qui sépare l Europe de l Afrique est une zone incontournable de commerce fluvial.',
       posterURL: 'https://fr.web.img6.acsta.net/pictures/15/08/05/14/27/311319.jpg',
       rating: 5,
+      trailerURL: '---'
     },
     {
       title: '3 mètres au-dessus du ciel',
       description: 'À Barcelone, deux jeunes gens issus de mondes opposés se rencontrent et tombent follement amoureux l un de l autre.',
       posterURL: 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSQuU4ngEv0Rk1C4hjFfBPCw5x3fzIk9PyvAcGAZYB0c-d82bPY6MrQ35Sg-tVtLKLV',
       rating: 4,
+      trailerURL: '---'
     },
   ]);
   const [filter, setFilter] = useState({});// The state variable movies is initialized using the useState hook to store an array of objects representing the movies.

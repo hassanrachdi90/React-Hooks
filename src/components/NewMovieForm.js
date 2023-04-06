@@ -5,7 +5,7 @@ const NewMovieForm = ({ onAddMovie }) => { // Defining a function component call
   const [description, setDescription] = useState('');// Initializing a state variable for description and setting its initial value to an empty string
   const [posterURL, setPosterURL] = useState('');// Initializing a state variable for posterURL and setting its initial value to an empty string
   const [rating, setRating] = useState('');// Initializing a state variable for rating and setting its initial value to an empty string
-
+  const [trailerURL, setTrailerURL] = useState('');
 
   const handleSubmit = (event) => { // Defining a function called handleSubmit to handle form submission
     event.preventDefault(); // Preventing the default form submission behavior
@@ -14,6 +14,7 @@ const NewMovieForm = ({ onAddMovie }) => { // Defining a function component call
     setDescription('');// Resetting the description state variable to an empty string
     setPosterURL('');// Resetting the posterURL state variable to an empty string
     setRating('');// Resetting the rating state variable to an empty string
+    setTrailerURL('');//Setting the trailerURL state to an empty string will cause the input field for the trailer URL to be cleared, since the value of the input field is bound to the trailerURL state variable.
   };
 
   return (
@@ -42,6 +43,15 @@ const NewMovieForm = ({ onAddMovie }) => { // Defining a function component call
         id="posterURL"
         value={posterURL}
         onChange={(event) => setPosterURL(event.target.value)}
+        required
+      />
+
+      <label htmlFor="trailerURL">Trailer URL:</label>
+      <input
+        type="url"
+        id="trailerURL"
+        value={trailerURL}
+        onChange={(event) => setTrailerURL(event.target.value)}
         required
       />
 
